@@ -59,7 +59,7 @@ public abstract class SearchAlgorithm {
         ArrayList<String> actionStrs = new ArrayList<>();
         State s = finalState;
         while(s.parent != null){
-            actionStrs.add(0, s.actionStr);
+            actionStrs.add(0, s.stateName);
             s = s.parent;
         }
         return actionStrs;

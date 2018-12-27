@@ -4,18 +4,19 @@ import java.util.ArrayList;
 public abstract class State {
     public int g_state;
     public State parent;
-    public String actionStr;
+    public String stateName;
     public int step_from_root;
 
-    public State(int g_state) {
+    public State(int g_state, String stateName) {
         this.g_state = g_state;
+        this.stateName = stateName;
         step_from_root = 0;
     }
 
-    public State(int g_state, State parent, String actionStr){
-        this(g_state);
+    public State(int g_state, State parent, String stateName){
+        this.g_state = g_state;
+        this.stateName = stateName;
         this.parent = parent;
-        this.actionStr = actionStr;
         step_from_root = parent.step_from_root + 1;
     }
 
