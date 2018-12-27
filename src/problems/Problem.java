@@ -6,16 +6,34 @@ import java.util.ArrayList;
 
 public abstract class Problem{
 
+    protected ArrayList<State> finalStates;
+    protected ArrayList<State> allState;
+    protected State initialState;
+
     public Problem(){
-
+        finalStates = new ArrayList<>();
+        allState = new ArrayList<>();
     }
 
-    public abstract State getInitialState();
-    public abstract boolean isFinal(State s);
+    public abstract int hCost(State s);
 
-    public int hCost(State s) {// heuristic cost to final
-        return 0;
+    public void setInitialState(State state) {
+        initialState = state;
     }
 
-    public abstract ArrayList<State> getFinalStates();
+    public boolean isFinal(State s) {
+        return finalStates.contains(s);
+    }
+
+    public ArrayList<State> getFinalStates(){
+        return finalStates;
+    }
+
+    public ArrayList<State> getAllState() {
+        return allState;
+    }
+
+    public State getInitialState() {
+        return initialState;
+    }
 }

@@ -49,6 +49,7 @@ public abstract class SearchAlgorithm {
         if(finalState == null){
             System.err.println("Can't access to a final! :(");
         }
+        printResult();
     }
 
     public ArrayList<String> getBestPath(){
