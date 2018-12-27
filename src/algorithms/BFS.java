@@ -13,7 +13,7 @@ public class BFS extends SearchAlgorithm {
         if(p.isFinal(start)){
             return start;
         }
-        ArrayList<State> openList /*f*/ = new ArrayList<>();
+        ArrayList<State> openList  = new ArrayList<>();
         openList.add(start);
         visitedStates.add(start);
 
@@ -21,15 +21,15 @@ public class BFS extends SearchAlgorithm {
             maxMemoryUsage‌ = Math.max(maxMemoryUsage‌, openList.size() + expandedStates.size());
             State s = openList.remove(0);
             expandedStates.add(s);
-            for(Action a : s.actionList()){
-                State ns = a.nextState;
-                if(cantBeAdded(ns, openList))
-                    continue;
-                visitedStates.add(ns);
-                if(p.isFinal(ns)){
-                    return ns;
+            for(Action a : s.getActions()) {
+                State ns = a.getNextState();
+                if(isAddable(ns, openList)) {
+                    visitedStates.add(ns);
+                    if(p.isFinal(ns)){
+                        return ns;
+                    }
+                    openList.add(ns);
                 }
-                openList.add(ns);
             }
         }
         return null;

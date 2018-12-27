@@ -11,9 +11,11 @@ public class AStar extends SearchAlgorithm {
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();
+
         if(p.isFinal(start)){
             return start;
         }
+
         ArrayList<State> openList = new ArrayList<>();
         openList.add(start);
         visitedStates.add(start);
@@ -26,12 +28,12 @@ public class AStar extends SearchAlgorithm {
                 return s;
             }
             expandedStates.add(s);
-            for(Action a : s.actionList()){
-                State ns = a.nextState;
-                if(cantBeAdded(ns, openList))
-                    continue;
-                visitedStates.add(ns);
-                openList.add(ns);
+            for(Action a : s.getActions()){
+                State ns = a.getNextState();
+                if(isAddable(ns, openList)) {
+                    visitedStates.add(ns);
+                    openList.add(ns);
+                }
             }
         }
         return null;
@@ -41,7 +43,7 @@ public class AStar extends SearchAlgorithm {
         int minLoad = Integer.MAX_VALUE;
         State bestState = null;
         for(State s: openList){
-            int sDotLoad = s.g_state + p.hCost(s);
+            int sDotLoad = s.getG_state() + p.hCost(s);
             if(sDotLoad < minLoad){
                 minLoad = sDotLoad;
                 bestState = s;

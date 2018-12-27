@@ -4,6 +4,7 @@ import problems.Problem;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+
 public abstract class SearchAlgorithm {
 
     private State finalState;
@@ -26,21 +27,19 @@ public abstract class SearchAlgorithm {
         return this;
     }
 
-    protected boolean cantBeAdded(State s, ArrayList<State> openList){
+    protected boolean isAddable(State s, ArrayList<State> openList){
         for(State aState: openList) {
             if (s.equals(aState))
-                return true;
+                return false;
         }
         if(isGraphSearch){
             for(State aState : expandedStates) {
                 if (s.equals(aState))
-                    return true;
+                    return false;
             }
         }
-        return false;
+        return true;
     }
-
-    protected abstract State searchAFinal(Problem p);
 
     public void run(Problem p){
         maxMemoryUsage‌ = 0;
@@ -52,15 +51,14 @@ public abstract class SearchAlgorithm {
         }
     }
 
-
     public ArrayList<String> getBestPath(){
         if(finalState == null)
             return null;
         ArrayList<String> actionStrs = new ArrayList<>();
         State s = finalState;
-        while(s.parent != null){
-            actionStrs.add(0, s.stateName);
-            s = s.parent;
+        while(s.getParentState() != null){
+            actionStrs.add(0, s.getStateName());
+            s = s.getParentState();
         }
         return actionStrs;
     }
@@ -68,8 +66,9 @@ public abstract class SearchAlgorithm {
     public int getBestCost(){
         if(finalState == null)
             return -1;
-        return finalState.g_state;
+        return finalState.getG_state();
     }
+
 
     public State getFinal(){
         return finalState;
@@ -82,5 +81,15 @@ public abstract class SearchAlgorithm {
     }
     public int expandedStatesNumber(){
         return expandedStates.size();
+    }
+    protected abstract State searchAFinal(Problem p);
+
+    public void printResult() {
+        System.out.println("Visited states number: " + visitedStates.size());
+        System.out.println("Expanded states number: " + expandedStates.size());
+        System.out.println("Best path: " + getBestPath());
+        System.out.println("Best path cost: " + getBestCost());
+        System.out.println("Max memory usage (states number): " + maxMemoryUsage‌ );
+        System.out.println("Final state: [" + finalState + "]");
     }
 }

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public abstract class Problem{
 
     public Problem(){
+
     }
 
     public abstract State getInitialState();

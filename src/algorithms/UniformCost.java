@@ -14,6 +14,7 @@ public class UniformCost extends SearchAlgorithm{
         if(p.isFinal(start)){
             return start;
         }
+
         ArrayList<State> openList = new ArrayList<>();
         openList.add(start);
         visitedStates.add(start);
@@ -26,12 +27,12 @@ public class UniformCost extends SearchAlgorithm{
                 return s;
             }
             expandedStates.add(s);
-            for(Action a : s.actionList()){
-                State ns = a.nextState;
-                if(cantBeAdded(ns, openList))
-                    continue;
-                visitedStates.add(ns);
-                openList.add(ns);
+            for(Action a : s.getActions()){
+                State ns = a.getNextState();
+                if(isAddable(ns, openList)) {
+                    visitedStates.add(ns);
+                    openList.add(ns);
+                }
             }
         }
         return null;
@@ -41,7 +42,7 @@ public class UniformCost extends SearchAlgorithm{
         int minLoad = Integer.MAX_VALUE;
         State bestState = null;
         for(State s: openList){
-            int sDotLoad = s.g_state;
+            int sDotLoad = s.getG_state();
             if(sDotLoad < minLoad){
                 minLoad = sDotLoad;
                 bestState = s;
