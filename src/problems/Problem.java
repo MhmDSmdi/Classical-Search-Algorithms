@@ -15,6 +15,8 @@ public abstract class Problem{
         allState = new ArrayList<>();
     }
 
+    public abstract void setupProblem();
+
     public abstract int hCost(State s);
 
     public void setInitialState(State state) {

@@ -7,6 +7,7 @@ import problems.Problem;
 import java.util.ArrayList;
 
 public class BFS extends SearchAlgorithm {
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();
@@ -24,6 +25,7 @@ public class BFS extends SearchAlgorithm {
             for(Action a : s.getActions()) {
                 State ns = a.getNextState();
                 if(isAddable(ns, openList)) {
+                    ns.setParentState(s);
                     visitedStates.add(ns);
                     if(p.isFinal(ns)){
                         return ns;

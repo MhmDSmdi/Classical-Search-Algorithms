@@ -12,7 +12,7 @@ public abstract class SearchAlgorithm {
     protected boolean isGraphSearch;
     protected HashSet<State> visitedStates, expandedStates;
 
-    SearchAlgorithm() {
+    public SearchAlgorithm() {
         visitedStates = new HashSet<>();
         expandedStates = new HashSet<>();
         isGraphSearch = true;

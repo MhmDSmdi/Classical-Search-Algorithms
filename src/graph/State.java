@@ -9,14 +9,14 @@ public class State {
     private int step_from_root;
     private ArrayList<Action> actions;
 
-    public State(int g_state, String stateName) {
+    public State(String stateName, int g_state) {
         actions = new ArrayList<>();
         this.g_state = g_state;
         this.stateName = stateName;
         step_from_root = 0;
     }
 
-    public State(int g_state, State parentState, String stateName){
+    public State(String stateName, State parentState, int g_state){
         actions = new ArrayList<>();
         this.g_state = g_state;
         this.stateName = stateName;
@@ -34,6 +34,10 @@ public class State {
 
     public State getParentState() {
         return parentState;
+    }
+
+    public void setParentState(State parentState) {
+        this.parentState = parentState;
     }
 
     public String getStateName() {
