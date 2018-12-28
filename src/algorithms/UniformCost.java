@@ -33,8 +33,8 @@ public class UniformCost extends SearchAlgorithm{
             expandedStates.add(s);
             for(Action a : s.getActions()){
                 State ns = a.getNextState();
-                ns.setParentState(s);
                 if(isAddable(ns, openList)) {
+                    ns.setParentState(s, a);
                     visitedStates.add(ns);
                     openList.add(ns);
                 }

@@ -35,9 +35,9 @@ public class AStar extends SearchAlgorithm {
             expandedStates.add(s);
             for(Action a : s.getActions()){
                 State ns = a.getNextState();
-                ns.setParentState(s);
                 if(isAddable(ns, openList)) {
                     visitedStates.add(ns);
+                    ns.setParentState(s, a);
                     openList.add(ns);
                 }
             }
@@ -49,7 +49,7 @@ public class AStar extends SearchAlgorithm {
         int minLoad = Integer.MAX_VALUE;
         State bestState = null;
         for(State s: openList){
-            int sDotLoad = s.getG_state() + p.hCost(s);
+            int sDotLoad = s.getG_state() + s.getHeuristic();
             if(sDotLoad < minLoad){
                 minLoad = sDotLoad;
                 bestState = s;

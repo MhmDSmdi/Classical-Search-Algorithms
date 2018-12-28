@@ -29,7 +29,7 @@ public class DFS extends SearchAlgorithm {
             for(Action a : s.getActions()){
                 State ns = a.getNextState();
                 if(isAddable(ns, openList)) {
-                    ns.setParentState(s);
+                    ns.setParentState(s, a);
                     visitedStates.add(ns);
                     if (p.isFinal(ns)) {
                         return ns;
