@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 public class BFS extends SearchAlgorithm {
 
+    public BFS() {
+        algorithmName = "BFS Search Algorithm";
+    }
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();

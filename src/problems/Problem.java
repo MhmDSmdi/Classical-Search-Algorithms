@@ -17,8 +17,6 @@ public abstract class Problem{
 
     public abstract void setupProblem();
 
-    public abstract int hCost(State s);
-
     public void setInitialState(State state) {
         initialState = state;
     }

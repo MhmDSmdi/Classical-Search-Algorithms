@@ -4,24 +4,17 @@ import java.util.ArrayList;
 public class State {
 
     private int g_state;
+    private int heuristic;
     private State parentState;
     private String stateName;
     private int step_from_root;
     private ArrayList<Action> actions;
 
-    public State(String stateName, int g_state) {
+    public State(String stateName, int heuristic) {
         actions = new ArrayList<>();
-        this.g_state = g_state;
-        this.stateName = stateName;
+        this.heuristic = heuristic;
+        this.stateName = stateName.toLowerCase();
         step_from_root = 0;
-    }
-
-    public State(String stateName, State parentState, int g_state){
-        actions = new ArrayList<>();
-        this.g_state = g_state;
-        this.stateName = stateName;
-        this.parentState = parentState;
-        step_from_root = parentState.step_from_root + 1;
     }
 
     public String toString() {
@@ -36,8 +29,14 @@ public class State {
         return parentState;
     }
 
-    public void setParentState(State parentState) {
+    public void setParentState(State parentState, Action action) {
         this.parentState = parentState;
+        step_from_root = parentState.step_from_root + 1;
+        g_state = action.getStepCost() + parentState.g_state;
+    }
+
+    public int getHeuristic() {
+        return heuristic;
     }
 
     public String getStateName() {

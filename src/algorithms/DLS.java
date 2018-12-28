@@ -7,17 +7,20 @@ import problems.Problem;
 import java.util.ArrayList;
 
 public class DLS extends SearchAlgorithm {
+
     private int depthLimit;
+
     public DLS(int depthLimit){
+        algorithmName = "DLS Search Algorithm";
         this.depthLimit = depthLimit;
     }
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();
 
-        if(p.isFinal(start)){
+        if(p.isFinal(start))
             return start;
-        }
 
         ArrayList<State> openList = new ArrayList<>();
         openList.add(start);
@@ -26,17 +29,18 @@ public class DLS extends SearchAlgorithm {
         while(!openList.isEmpty()){
             maxMemoryUsage‌ = Math.max(maxMemoryUsage‌, openList.size() + expandedStates.size());
             State s = openList.remove(0);
-            if(s.getStep_from_root() >= depthLimit) continue;
-            expandedStates.add(s);
-            for(Action a : s.getActions()){
-                State ns = a.getNextState();
-                ns.setParentState(s);
-                if(isAddable(ns, openList)) {
-                    visitedStates.add(ns);
-                    if (p.isFinal(ns)) {
-                        return ns;
+            if(s.getStep_from_root() < depthLimit) {
+                expandedStates.add(s);
+                for (Action a : s.getActions()) {
+                    State ns = a.getNextState();
+                    ns.setParentState(s);
+                    if (isAddable(ns, openList)) {
+                        visitedStates.add(ns);
+                        if (p.isFinal(ns)) {
+                            return ns;
+                        }
+                        openList.add(0, ns);
                     }
-                    openList.add(0, ns);
                 }
             }
         }

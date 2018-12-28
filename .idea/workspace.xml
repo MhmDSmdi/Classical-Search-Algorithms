@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a9fda9-69a2-4c70-96b6-28fd128b1e86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/problems/Problem_cities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/AStar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/AStar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/BFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/DFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/DFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/DLS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/DLS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/ID_DFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/ID_DFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/SearchAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/SearchAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/UniformCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/algorithms/UniformCost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/graph/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/graph/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/problems/Problem1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI-Fall2018-P1/problems/Problem1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/AStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/AStar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BFS.java" afterDir="false" />
@@ -13,7 +24,7 @@
       <change beforePath="$PROJECT_DIR$/src/algorithms/UniformCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/UniformCost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problems/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problems/Problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/Problem1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problems/Problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/Problem_test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,22 +46,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="101" />
+          <entry key="java" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="101" />
+          <entry key="JAVA" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1037" />
+          <entry key="dummy" value="11" />
+          <entry key="java" value="1985" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1037" />
+          <entry key="JAVA" value="1985" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -58,10 +71,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/ID_DFS.java">
+        <entry file="file://$PROJECT_DIR$/src/problems/Problem_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="576">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,22 +83,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/SearchAlgorithm.java">
+        <entry file="file://$PROJECT_DIR$/src/graph/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#949#950#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/UniformCost.java">
+        <entry file="file://$PROJECT_DIR$/src/problems/Problem_cities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="513">
+              <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/problems/Problem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,17 +144,19 @@
         <option value="$PROJECT_DIR$/src/algorithms/BestSelection.java" />
         <option value="$PROJECT_DIR$/src/problems/problem1.java" />
         <option value="$PROJECT_DIR$/src/graph/Action.java" />
-        <option value="$PROJECT_DIR$/src/problems/Problem.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/SearchAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/graph/State.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/BFS.java" />
         <option value="$PROJECT_DIR$/src/problems/Problem1.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/DFS.java" />
         <option value="$PROJECT_DIR$/src/algorithms/AStar.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/DLS.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/BFS.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/DFS.java" />
         <option value="$PROJECT_DIR$/src/algorithms/ID_DFS.java" />
         <option value="$PROJECT_DIR$/src/algorithms/UniformCost.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/SearchAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/DLS.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/graph/State.java" />
+        <option value="$PROJECT_DIR$/src/problems/Problem.java" />
+        <option value="$PROJECT_DIR$/src/problems/Problem_test.java" />
+        <option value="$PROJECT_DIR$/src/problems/Problem_cities.java" />
       </list>
     </option>
   </component>
@@ -136,7 +166,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
     <option name="width" value="960" />
     <option name="height" value="1055" />
@@ -190,7 +220,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545986263081" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545989145287" />
     <property name="last_opened_file_path" value="$USER_HOME$/MHMD_DRIVE/Term5/AI/sad/Classical-Search-Algorithms-master(1)/Classical-Search-Algorithms-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -243,12 +273,12 @@
       <updated>1545320228772</updated>
       <workItem from="1545320233269" duration="17000" />
       <workItem from="1545934902711" duration="6841000" />
-      <workItem from="1545984801218" duration="1472000" />
+      <workItem from="1545984801218" duration="4343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8330000" />
+    <option name="totallyTimeSpent" value="11201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,10 +290,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="960" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3358862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -272,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,74 +343,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/State.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="216">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="46" />
           <folding>
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/BFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problems/Problem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problems/Problem1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/ID_DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/UniformCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/SearchAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/AStar.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="180">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -389,40 +425,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/DLS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="432">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/ID_DFS.java">
+    <entry file="file://$PROJECT_DIR$/src/graph/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="270">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problems/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/SearchAlgorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/problems/Problem_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="576">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/UniformCost.java">
+    <entry file="file://$PROJECT_DIR$/src/problems/Problem_cities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="513">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
           </folding>
         </state>
       </provider>

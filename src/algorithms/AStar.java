@@ -8,6 +8,11 @@ import java.util.ArrayList;
 
 public class AStar extends SearchAlgorithm {
 
+
+    public AStar() {
+        algorithmName = "A* Search Algorithm";
+    }
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();

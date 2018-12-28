@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 public class UniformCost extends SearchAlgorithm{
 
+    public UniformCost() {
+        algorithmName = "UniformCost Search Algorithm";
+    }
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();

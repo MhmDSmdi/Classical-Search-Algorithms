@@ -8,6 +8,11 @@ import java.util.ArrayList;
 
 
 public class ID_DFS extends SearchAlgorithm {
+
+    public ID_DFS() {
+        algorithmName = "IDDFS Search Algorithm";
+    }
+
     @Override
     protected State searchAFinal(Problem p) {
         State start = p.getInitialState();

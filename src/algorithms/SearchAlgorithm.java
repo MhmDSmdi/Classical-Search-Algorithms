@@ -7,6 +7,7 @@ import java.util.HashSet;
 
 public abstract class SearchAlgorithm {
 
+    public String algorithmName;
     private State finalState;
     protected int maxMemoryUsage‌;
     protected boolean isGraphSearch;
@@ -86,6 +87,7 @@ public abstract class SearchAlgorithm {
     protected abstract State searchAFinal(Problem p);
 
     public void printResult() {
+        System.out.println("Algorithm Name: " + algorithmName);
         System.out.println("Visited states number: " + visitedStates.size());
         System.out.println("Expanded states number: " + expandedStates.size());
         System.out.println("Best path: " + getBestPath());

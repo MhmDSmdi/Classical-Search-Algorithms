@@ -3,9 +3,9 @@ package problems;
 import graph.Action;
 import graph.State;
 
-public class Problem1 extends Problem {
+public class Problem_test extends Problem {
 
-    public Problem1() {
+    public Problem_test() {
         setupProblem();
     }
 
@@ -33,8 +33,4 @@ public class Problem1 extends Problem {
 
     }
 
-    @Override
-    public int hCost(State s) {
-        return 0;
-    }
 }
