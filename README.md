@@ -1,2 +1,2 @@
 # Classical Search Algorithms
-AI Fall 2018 Project1
+AI Project1 Fall 2018
